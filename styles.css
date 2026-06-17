@@ -215,7 +215,7 @@ h3 {
   border-radius: 8px;
   padding: 0 18px;
   font-weight: 800;
-  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
 }
 
 .button:hover,
@@ -224,10 +224,15 @@ h3 {
 }
 
 .button.primary {
-  border-color: rgba(138, 231, 255, 0.5);
-  background: linear-gradient(180deg, #8ae7ff 0%, #6ea9ff 35%, #3d56ff 100%);
-  color: #030712;
-  box-shadow: 0 16px 42px rgba(61, 86, 255, 0.26);
+  border-color: rgba(138, 231, 255, 0.42);
+  background: rgba(138, 231, 255, 0.1);
+  color: var(--clinical-white);
+}
+
+.button.primary:hover,
+.button.primary:focus-visible {
+  border-color: rgba(138, 231, 255, 0.72);
+  background: rgba(138, 231, 255, 0.16);
 }
 
 .button.secondary {
